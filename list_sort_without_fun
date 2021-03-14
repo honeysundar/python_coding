@@ -10,3 +10,15 @@ while my_list:
     my_list.remove(min)
 
 print(new_list)
+
+
+
+
+list=[2,5,1,3,3]
+#print(list[::-1])
+list_sort=[]
+for x in list:
+    if x not in list_sort:
+        list_sort.append(x)
+        
+print(list_sort)
