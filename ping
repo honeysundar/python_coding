@@ -1,9 +1,17 @@
+import requests
 import os
-hostname = "google.com" #example
+os.system("ls")
+hostname = "google.com"
 response = os.system("ping -c 1 " + hostname)
 
-#and then check the response...
 if response == 0:
+  print ("hostname 'is up!'")
+else:
+  print ("hostname, 'is down!'")
+
+x = requests.get('https://w3schools.com')
+status_code = x.status_code
+if status_code == 200:
   print ("hostname, 'is up!'")
 else:
   print ("hostname, 'is down!'")
