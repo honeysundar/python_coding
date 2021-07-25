@@ -1,20 +1,8 @@
-a = [16, 19, 11, 15, 10, 12, 14]
-
-#repeating loop len(a)(number of elements) number of times
-for j in range(len(a)):
-    #initially swapped is false
-    swapped = False
-    i = 0
-    while i<len(a)-1:
-        #comparing the adjacent elements
-        if a[i]>a[i+1]:
-            #swapping
-            a[i],a[i+1] = a[i+1],a[i]
-            #Changing the value of swapped
-            swapped = True
-        i = i+1
-    #if swapped is false then the list is sorted
-    #we can stop the loop
-    if swapped == False:
-        break
-print (a)
+list=[20,10,15,5,30]
+for iter_num in range(len(list)-1,0,-1):
+      for idx in range(iter_num):
+          if list[idx]>list[idx+1]:
+              temp = list[idx]
+              list[idx] = list[idx+1]
+              list[idx+1]= temp
+print(list)
