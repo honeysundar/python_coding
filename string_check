@@ -1,0 +1,12 @@
+from curses.ascii import isdigit
+txt = "h3110 23 cat 444.4 rabbit 11 2 dog"
+#int(s) 
+list=[]
+
+for s in txt.split():
+    if s.isdigit():
+        list.append(s)
+print(list)
+
+res=[int(i) for i in list]
+print(res)
