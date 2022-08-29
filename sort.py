@@ -10,15 +10,21 @@ print(list)
 
 #sort without functions  
 
-my_list = [-15, -26, 15, 1, 23, -64, 23, 76]
-new_list = []
+#sort
+num=[10,3,5,8,34]
+new_list=[]
 
-while my_list:
-    min = my_list[0]  
-    for x in my_list: 
-        if x < min:
-            min = x
+for i in range(len(num)):
+    print(i)
+    min=num[0]
+    print("min value",min)
+    for j in num:
+        if j < min: 
+            min = j 
+    print("min",min)
     new_list.append(min)
-    my_list.remove(min)
-
+    #print(new_list)
+    num.remove(min) 
+    print("num",num)
+    print("new_list",new_list)
 print(new_list)
